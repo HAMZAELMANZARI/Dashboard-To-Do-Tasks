@@ -1,7 +1,7 @@
 # Dashboard-To-Do-Tasks
 # Dashboard Task Management System
 
-![Dashboard Preview](screenshot.png)
+![Dashboard Preview](https://hamzaelmanzari.github.io/Dashboard-To-Do-Tasks/)
 
 A responsive dashboard interface for task management, project tracking, and personal productivity.
 

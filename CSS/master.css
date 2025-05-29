@@ -465,8 +465,8 @@ ul {
     right: 0;
     bottom: 0;
     opacity: 0.1;
-    animation: change-position 3s infinite alternate-reverse;
-    -webkit-animation: change-position 3s infinite alternate-reverse;
+    animation: change-position 3s infinite alternate;
+    -webkit-animation: change-position 3s infinite alternate;
 }
 /* End Last Project */
 /* Start Animation */
@@ -479,12 +479,12 @@ ul {
     }
 }
 @keyframes change-position {
-    from {
-        top: 0px;
+    0%, 50% {
+        bottom: -100px;
         opacity: 0;
     }
-    to {
-        bottom: 0px;
+    100% {
+        bottom: 200px;
         opacity: 1;
     }
 }
