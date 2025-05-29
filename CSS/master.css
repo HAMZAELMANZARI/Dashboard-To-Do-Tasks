@@ -422,25 +422,70 @@ ul {
 }
 /* End Search Items */
 /* Start Upload Items */
-.uploads .items-rows .box img {
-    width: 44px;
-    height: 44px;
-}
-.uploads .items-rows .box .text {
-    flex-grow: 1;
-}
-.uploads .items-rows .box .size {
-    padding: 4px 10px;
-    background-color: #eee;
-    font-size: 13px;
-    border-radius: var(--border-radius);
-    -webkit-border-radius: var(--border-radius);
-    -moz-border-radius: var(--border-radius);
-    -ms-border-radius: var(--border-radius);
-    -o-border-radius: var(--border-radius);
-}
-.uploads .items-rows .box.news-row:not(:last-of-type){
+.uploads ul li:not(:last-child) {
     border-bottom: var(--main-border);
 }
+.uploads ul li div img {
+    width: 40px;
+    height: 40px;
+}
 /* End Upload Items */
+/* Start Last Project */
+.last-project ul::before {
+    content: "";
+    position: absolute;
+    left: 11px;
+    width: 2px;
+    height: 100%;
+    background-color: var(--blue-color);
+}
+.last-project ul li::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #fff;
+    outline: 2px solid var(--blue-color);
+    margin-right: 15px;
+    z-index: 1;
+}
+.last-project ul li.done::before {
+    content: "";
+    background-color: var(--blue-color);
+}
+.last-project ul li.current::before {
+    animation: change-color 0.8s infinite alternate;
+    -webkit-animation: change-color 0.8s infinite alternate;
+}
+.last-project .launch-icon {
+    position: absolute;
+    width: 160px;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1;
+    animation: change-position 3s infinite alternate-reverse;
+    -webkit-animation: change-position 3s infinite alternate-reverse;
+}
+/* End Last Project */
+/* Start Animation */
+@keyframes change-color {
+    from {
+        background-color: var(--blue-color);
+    }
+    to{
+        background-color: #ffffff;
+    }
+}
+@keyframes change-position {
+    from {
+        top: 0px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0px;
+    }
+}
+/* End Animation */
 
