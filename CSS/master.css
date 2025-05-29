@@ -481,10 +481,11 @@ ul {
 @keyframes change-position {
     from {
         top: 0px;
-        opacity: 1;
+        opacity: 0;
     }
     to {
         bottom: 0px;
+        opacity: 1;
     }
 }
 /* End Animation */
