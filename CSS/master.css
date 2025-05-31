@@ -469,6 +469,24 @@ ul {
     -webkit-animation: change-position 3s infinite alternate;
 }
 /* End Last Project */
+/* Start Reminders */
+.reminder ul li .key {
+    width: 15px;
+    height: 15px;
+}
+.reminder ul li > .blue {
+    border-left: 2px solid var(--blue-color);
+}
+.reminder ul li > .orange {
+    border-left: 2px solid var(--orange-color);
+}
+.reminder ul li > .green {
+    border-left: 2px solid var(--green-color);
+}
+.reminder ul li > .red {
+    border-left: 2px solid var(--red-color);
+}
+/* End Reminders */
 /* Start Animation */
 @keyframes change-color {
     from {
