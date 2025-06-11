@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="This is Dashbord-MS of mangment">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="HTML, Dashbord, CSS, Template, Hamza-El-Manzari">
+    <title>Dashboard-MS</title>
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/master.css">
+    <link rel="stylesheet" href="CSS/framework.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page d-flex">
+        <header class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative txt-c mt-o">Elmanzari</h3>
+            <ul>
+                <li>
+                    <a class="d-flex a-center fs-14 c-black rad-6 p-10" href="index.html" title="Dashboard">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span class="hide-mobile">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active d-flex a-center fs-14 c-black rad-6 p-10" href="settings.html" title="Settings">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span class="hide-mobile">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex a-center fs-14 c-black rad-6 p-10" href="profile.html" title="Profile">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span class="hide-mobile">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex a-center fs-14 c-black rad-6 p-10" href="projects.html" title="Projects">
+                    <i class="fa-solid fa-diagram-project fa-fw"></i>
+                    <span class="hide-mobile">Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex a-center fs-14 c-black rad-6 p-10" href="courses.html" title="Courses">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span class="hide-mobile">Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex a-center fs-14 c-black rad-6 p-10" href="friends.html" title="Friends">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span class="hide-mobile">Friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex a-center fs-14 c-black rad-6 p-10" href="files.html" title="Files">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <span class="hide-mobile">Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex a-center fs-14 c-black rad-6 p-10" href="plans.html" title="Plans">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <span class="hide-mobile">Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <main class="content w-full">
+            <!-- Start Head -->
+            <section class="head bg-white p-15 between-flex">
+                <div class="search p-relative">
+                    <input class="p-10" type="search" name="search" placeholder="Type A keywords">
+                </div>
+                <div class="icons between-flex">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg" title="Notification"></i>
+                    </span>
+                    <img src="images/avatar.png" alt="person img" title="Admin">
+                </div>
+            </section>
+            <!-- End Head -->
+            <h1 class="p-relative">Settings</h1>
+            <section class="settings-page m-20 d-grid gap-20">
+                <article class="p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-10">Site Control</h2>
+                    <p class="mt-0 mb-20 c-grey fs-15">Control The Website If There Is Maintenance</p>
+                    <div class="mb-15 between-flex">
+                        <div>
+                            <span> Website Control </span>
+                            <p class="c-grey mt-5 mb-0 fs-13">Open/Close Website And Type The Reason</p>
+                        </div>
+                        <div>
+                            <label>
+                                <input class="toggle-checkbox" type="checkbox" checked>
+                                <div class="toggle-switch"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <textarea class="close-message b-none p-10 rad-6 d-block w-full" placeholder="Close Message Content"></textarea>
+                </article>
+                
+            </section>
+            
+        </main>
+    </div>
+</body>
+</html>
