@@ -91,7 +91,7 @@ ul {
 }
 @media (max-width: 767px) {
     .sidebar {
-        width: 58px;
+        width: 80px;
         padding: 10px;
     }
     .sidebar > h3 {
