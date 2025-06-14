@@ -140,6 +140,9 @@
 .bg-red {
     background-color: var(--red-color);
 }
+.bg-gery {
+    background-color: #eee;
+}
 .c-white {
     color: #fff;
 }

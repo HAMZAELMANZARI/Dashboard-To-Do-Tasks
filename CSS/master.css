@@ -676,9 +676,25 @@ ul {
     content: "\f00c";
     left: 50px;
     color: var(--blue-color);
-
 }
 /* End Settings */
+/* Start General */
+.general input {
+    border: var(--main-border);
+}
+.general input:focus::placeholder {
+    opacity: 0;
+}
+.general input:focus {
+    outline:none;
+}
+/* End General */
+/* Start Security */
+.security .sec-box:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+} 
+/* End Security */
 @keyframes change-color {
     from {
         background-color: var(--blue-color);
