@@ -663,11 +663,11 @@ ul {
     justify-content: center;
     align-items: center;
     color: #AAA;
-    transition:var(--main-transition);
+    -o-transition:var(--main-transition);
     -webkit-transition:var(--main-transition);
     -moz-transition:var(--main-transition);
     -ms-transition:var(--main-transition);
-    -o-transition:var(--main-transition);
+    transition:var(--main-transition);
 }
 .toggle-checkbox:checked + .toggle-switch {
     background-color: var(--blue-color);
@@ -695,6 +695,41 @@ ul {
     padding-bottom: 15px;
 } 
 /* End Security */
+/* Start Social box */
+.social-box > div {
+    border: 1px solid #eee;
+    background-color: #eee;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.social-box div i {
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.social-box div input {
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+.social-box div input:focus::placeholder {
+    opacity: 0;
+}
+.social-box div input[type="text"]:focus {
+    outline: none;
+}
+.social-box div input[type="text"]:focus::placeholder,
+.social-box div:hover i {
+    color: #000;
+}
+/* End Social box */
 @keyframes change-color {
     from {
         background-color: var(--blue-color);
