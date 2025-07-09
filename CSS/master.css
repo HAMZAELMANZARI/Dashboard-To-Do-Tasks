@@ -722,7 +722,7 @@ ul {
 .social-box div input:focus::placeholder {
     opacity: 0;
 }
-.social-box div input[type="text"]:focus {
+.social-box div input[type="text"]:focus{
     outline: none;
 }
 .social-box div input[type="text"]:focus::placeholder,
@@ -730,6 +730,131 @@ ul {
     color: #000;
 }
 /* End Social box */
+/* Start Widgets Control */
+.widgets-control .control {
+    display: flex;
+    align-items: center;
+}
+.widgets-control .control input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.widgets-control .control label{
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.widgets-control .control label::before,
+.widgets-control .control label::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.widgets-control .control label::before{
+    border-color: var(--blue-alt-color);
+}
+.widgets-control .control label::after{
+    font-family: var(--fa-style-family-classic);
+    content: "\f00c";
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    color: #FFF;
+    background-color: var(--blue-color);
+    font-size: 12px;
+    transform: scale(1) rotate(360deg);
+    -webkit-transform: scale(1) rotate(360deg);
+    -moz-transform: scale(1) rotate(360deg);
+    -ms-transform: scale(1) rotate(360deg);
+    -o-transform: scale(1) rotate(360deg);
+    -webkit-transform: scale(1) rotate(360deg);
+}
+.widgets-control .control label:hover::before{
+    background-color: var(--blue-alt-color);
+}
+.widgets-control .control input[type="radio"]:checked + label::before {
+    border-color: var(--blue-color);
+}
+.widgets-control .control input[type="radio"]:checked + label::after {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+/* End Widgets Control */
+/* Start Backup Control */
+.backup-control input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.backup-control .date label {
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.backup-control .date label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -11px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--grey-color);
+    border-radius: 50%;
+}
+.backup-control .date label::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: var(--blue-color);
+    border-radius: 50%;
+    transition: 0.3s;
+    transform: scale(0);
+}
+.backup-control .date input[type="radio"]:checked + label::before {
+    border-color: var(--blue-color);
+}
+.backup-control .date input[type="radio"]:checked + label::after {
+    transform: scale(1);
+}
+.backup-control .servers {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+@media (max-width: 767px) {
+.backup-control .servers {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+}
+.backup-control .servers .server {
+    border: 2px solid #eee;
+    position: relative;
+}
+.backup-control .servers .server label {
+    cursor: pointer;
+    padding: 20px;
+}
+.backup-control .servers input[type="radio"]:checked + .server {
+    border-color: var(--blue-color);
+    color: var(--blue-color);
+}
+/* End Backup Control */
+/* Start Animation */
 @keyframes change-color {
     from {
         background-color: var(--blue-color);
